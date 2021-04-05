@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_marginTop="65dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/anasayfa"
+            android:id="@+id/reklam">
+        </pl.droidsonroids.gif.GifImageView>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/reklam"
+            android:id="@+id/sliderIlanDetay">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/favoriIlanSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+                </androidx.viewpager.widget.ViewPager>
+
+                <me.relex.circleindicator.CircleIndicator
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/favoriIlanCircle"
+                    app:ci_drawable="@color/white"
+                    app:ci_drawable_unselected="@color/black">
+
+                </me.relex.circleindicator.CircleIndicator>
+
+        </RelativeLayout>
+
+</RelativeLayout>
